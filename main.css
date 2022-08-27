@@ -1,0 +1,154 @@
+@font-face{
+     font-family:'cursive-font';
+     src: url('assets/fonts/QwitcherGrypen-Bold.ttf');
+}
+@font-face{
+     font-family:'ornament';
+     src: url('assets/fonts/Neoclassicfleuronsfree-M3Zn.otf');
+}
+body{
+    margin: 0;
+    background: #fbfcfd;
+}
+.container{
+    display:block;
+    width:100%;
+    height:100%;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 18px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: cursive-font;
+    font-weight: 500;
+    font-size: 35px;
+    color: rgb(0, 11, 108);
+}
+.nav .item{
+    display: flex;
+    align-items: center;
+}
+.line-item{
+    width: 730px;
+}
+.line{
+    width:100%;
+    height:1px;
+    border-top: 1px solid #ec9342;
+}
+
+.header{
+    background: #f0f4fb;
+}
+.ornament, .ornaments{
+    font-family: ornament;
+    color: rgb(0, 11, 108);
+}
+.centered-div{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 0 0 0;
+    flex-direction: column;
+}
+.brand-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.brand-icon .ornament{
+    font-size: 70px;
+}
+.main-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.main-text h1{
+    font-size: 8rem;
+    line-height: 12rem;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+.main-text .ornament{
+    font-size: 100px;
+}
+.main-text .ornament-left{
+    margin-right: 50px;
+}
+.main-text .ornament-right{
+    margin-left: 50px;
+}
+
+.subtext{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.subtext .ornament{
+    font-size: 70px;
+}
+.subtext h6{
+    margin: 0 10px;
+}
+
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+.main-content .reusable-nav .item .ornament{
+    font-size: 70px;
+    color: #ec9342;
+}
+.main-content .reusable-nav .line-item{
+    width: 800px;
+}
+.main-content .heading .subtext h6{
+    font-size: 60px;
+    margin: 0 30px;
+}
+.main-content .heading{
+    margin-top: 30px;
+}
+
+
+.main-content .studies{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main-content .studies .study-item{
+    width: 28%;
+    padding: 20px;
+}
+.main-content .studies .study-item .study-image{
+   background: url('./assets/images/outer.svg');
+   width: 100%;
+   height: 28rem;
+   background-repeat: no-repeat;
+   background-size: 48%;
+   background-position: center center;
+}
+.main-content .studies .study-item .study-image .overlay{
+    height: 100%;
+    width: 100%;
+    background-image: url('./assets/images/testbg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    margin: 0px auto;
+    z-index: -1;
+    transition: background-size 0.4s ease-in 0s;
+}
+.mask1 {
+  -webkit-mask-image: url('./assets/images/w3logo.png');
+  mask-image: url('./assets/images/w3logo.png');
+}
